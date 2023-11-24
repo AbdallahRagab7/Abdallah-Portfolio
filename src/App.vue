@@ -1,30 +1,37 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <main>
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
+    <!-- <router-view/> -->
+  </main>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Jockey+One&display=swap");
+
+:root {
+  --heading-font: "Jockey One", sans-serif;
+  --secondary-font: "Gowun Batang", sans-serif;
+
+  --bg-color: #032030;
+  --primary-color: #1597bb;
+  --white-color: #ffffff;
 }
 
-nav {
-  padding: 30px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Gowun Batang", sans-serif;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+ul {
+  padding-left: 0;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
 }
 </style>
