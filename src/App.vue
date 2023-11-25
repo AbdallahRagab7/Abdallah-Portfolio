@@ -1,12 +1,28 @@
 <template>
   <main>
+    <TheHeader />
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
+    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
     <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
     <!-- <router-view/> -->
   </main>
 </template>
+<script>
+import TheHeader from "./components/layout/TheHeader.vue";
+
+export default {
+  components: {
+    TheHeader,
+  },
+};
+</script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Jockey+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
   --heading-font: "Jockey One", sans-serif;
@@ -21,17 +37,14 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Gowun Batang", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 ul {
   padding-left: 0;
 }
-
-li {
-  list-style: none;
-}
-
-a:link {
-  text-decoration: none;
+main {
+  background-color: var(--bg-color);
 }
 </style>

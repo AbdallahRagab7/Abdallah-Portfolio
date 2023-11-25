@@ -1,0 +1,106 @@
+<template>
+  <main>
+    <nav class="navbar navbar-expand-lg sticky">
+      <div class="container border-bottom">
+        <a class="navbar-brand fs-4" href="#"
+          >ABDALLAH
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="9"
+            viewBox="0 0 9 9"
+            fill="none"
+            class="mt-1"
+          >
+            <circle cx="4.5" cy="4.5" r="4.5" fill="#1597BB" /></svg
+        ></a>
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+        </button>
+
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Abdallah Ragab
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none fs-3"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-lg-center"
+            >
+              <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </main>
+</template>
+
+<style scoped>
+.navbar-nav .nav-link,
+.navbar-brand,
+.offcanvas-title {
+  color: var(--white-color);
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-brand:hover {
+  color: aqua;
+
+}
+.nav-link:hover {
+  color: aqua;
+  transition: 0.1s;
+}
+.navbar-toggler {
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background: rgba(21, 151, 187, 0.50);
+    box-shadow: 10px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+  }
+  .offcanvas-title {
+    font-size: 1.9rem;
+  }
+}
+</style>
