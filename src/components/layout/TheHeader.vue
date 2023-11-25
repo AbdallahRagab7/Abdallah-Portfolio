@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <section>
     <nav class="navbar navbar-expand-lg sticky">
       <div class="container border-bottom">
         <a class="navbar-brand fs-4" href="#"
@@ -68,7 +68,7 @@
         </div>
       </div>
     </nav>
-  </main>
+  </section>
 </template>
 
 <style scoped>

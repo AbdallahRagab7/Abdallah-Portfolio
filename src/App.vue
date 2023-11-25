@@ -1,21 +1,18 @@
 <template>
   <main>
     <TheHeader />
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <h1 class="text-center">بسم الله الرحمن الرحيم</h1>
-    <!-- <router-view/> -->
+    <TheHome />
   </main>
+  <!-- <router-view/> -->
 </template>
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
+import TheHome from "./pages/TheHome.vue";
 
 export default {
   components: {
     TheHeader,
+    TheHome,
   },
 };
 </script>
