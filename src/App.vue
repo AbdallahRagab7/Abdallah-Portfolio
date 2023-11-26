@@ -2,17 +2,20 @@
   <main>
     <TheHeader />
     <TheHome />
+    <TheAbout />
   </main>
   <!-- <router-view/> -->
 </template>
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheHome from "./pages/TheHome.vue";
+import TheAbout from "./pages/TheAbout.vue";
 
 export default {
   components: {
     TheHeader,
     TheHome,
+    TheAbout,
   },
 };
 </script>
@@ -40,6 +43,7 @@ export default {
 
 ul {
   padding-left: 0;
+  margin-left: 0;
 }
 main {
   background-color: var(--bg-color);

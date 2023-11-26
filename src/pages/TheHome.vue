@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    <div
-      class="row justify-content-center justify-content-md-around "
-    >
-      <div class="col-10 col-lg-5 mb-5 mb-lg-0 about">
+    <div class="row justify-content-center justify-content-md-around">
+      <!-- <div class="col-10 col-lg-5 mb-5 mb-lg-0 about"> -->
+      <div
+        class="about col-8 col-sm-6 col-md-6 col-lg-5 mb-5 mb-lg-0 order-last order-sm-first"
+      >
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
-        <h2 class="speciality">Front-End Web Developer</h2>
+        <h2 class="speciality ">Front-End Web Developer</h2>
         <h2 class="speciality">Software Engineer</h2>
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
@@ -17,9 +18,12 @@
         </p>
       </div>
 
-      <div class="col-10 col-md-9 col-lg-5 circles">
+      <!-- <div class="col-8 col-md-9 col-lg-5 circles justify-self-center align-self-center  "> -->
+      <div
+        class="col-8 col-sm-6 col-md-6 col-lg-5 circles justify-self-center align-self-center"
+      >
         <div class="profile-img overflow-hidden">
-          <img src="../assets/profile-img2.jpg" alt="" />
+          <img src="../assets/me1.png" alt="" />
         </div>
       </div>
     </div>
@@ -33,7 +37,6 @@
 .container {
   /*100vh - navbar height */
   min-height: calc(100vh - 66px);
-
   margin-top: 3rem;
 }
 .name {
@@ -47,7 +50,7 @@
 .line {
   width: 7rem;
   height: 3.5rem;
-  margin-left:-10% ;
+  margin-left: -10%;
   margin-top: -1%;
 }
 .line img {
@@ -59,22 +62,20 @@
   font-family: var(--secondary-font);
   line-height: 1.6;
   max-width: 86%;
-  opacity: .8;
+  opacity: 0.8;
 }
-
-/*
 
 .profile-img {
   position: relative;
-  width: 17.0625rem;
-  height: 26.0625rem;
+  width: 15.0625rem;
+  height: 24.0625rem;
   border-radius: 34%;
   overflow: hidden;
-  border: 4px solid #1597bb;
+  border: 4px;
   background: white;
+  background: var(--bg-color);
   z-index: 1;
 }
-
 
 .circles {
   position: relative;
@@ -82,8 +83,8 @@
 .circles::before {
   content: "";
   position: absolute;
-  width: 17.0625rem;
-  height: 26.0625rem;
+  width: 15.0625rem;
+  height: 24.0625rem;
   border-radius: 34%;
   border: 4px solid #1597bb;
   left: -10%;
@@ -92,29 +93,40 @@
 .circles::after {
   content: "";
   position: absolute;
-  width: 17.0625rem;
-  height: 26.0625rem;
+  width: 15.0625rem;
+  height: 24.0625rem;
   border-radius: 34%;
   border: 4px solid #1597bb;
   left: 20%;
   top: 10%;
 }
 
-@media (max-width:992px) {
-    .circles::after {
+@media (max-width: 768px) {
+  .circles::after {
     display: none;
-      }
-      
+  }
+  .name {
+    font-size: 2.5rem;
+  }
 }
-*/
-.profile-img {
-  border: 5px solid;
-  /* border: 4px solid ;
-  border-image: linear-gradient(45deg, rgb(87, 44, 87), rgb(206, 137, 9)) 1;
-  padding: 15px; */
+
+@media (max-width: 576px) {
+  .profile-img,
+  .circles::before,
+  .circles::after {
+    width: 12rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
 }
+
 .profile-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 </style>
