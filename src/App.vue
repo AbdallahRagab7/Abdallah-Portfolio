@@ -3,6 +3,7 @@
     <TheHeader />
     <TheHome />
     <TheAbout />
+    <MySkills />
   </main>
   <!-- <router-view/> -->
 </template>
@@ -10,12 +11,15 @@
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheHome from "./pages/TheHome.vue";
 import TheAbout from "./pages/TheAbout.vue";
+import MySkills from "./pages/MySkills.vue";
 
 export default {
   components: {
     TheHeader,
     TheHome,
     TheAbout,
+    MySkills,
+
   },
 };
 </script>

@@ -4,13 +4,13 @@
       <div
         class="row justify-content-center justify-content-sm-between justify-content-md-between justify-content-lg-around "
       >
-        <div class="col-8 col-sm-6 col-lg-4 circles align-self-center align-self-md-start ">
+        <div class="col-10 col-sm-6 col-lg-4 circles align-self-center align-self-md-start ">
           <div class="about-img overflow-hidden">
             <img src="../assets/about.png" alt="" />
           </div>
         </div>
 
-        <div class="col-8  col-sm-6 col-lg-6 about">
+        <div class="col-10  col-sm-6 col-lg-6 about">
           <h1>About me</h1>
           <h2 class="mb-4">
             Every great website begin within even better story .
@@ -28,12 +28,13 @@
             </li>
           </ul>
 
-          <p v-if="this.selectedComponent == 'about'" class="me">
-            I am a fresh graduate from the Faculty of Computer and Data Science
-            with a passion for web development. My primary expertise lies in
-            front-end web development using Vue.js, where I’ve gained valuable
-            skills in creating engaging and responsive user interfaces.
-          </p>
+            <p v-if="this.selectedComponent == 'about'" class="me ">
+              I am a fresh graduate from the Faculty of Computer and Data Science
+              with a passion for web development. My primary expertise lies in
+              front-end web development using Vue.js, where I’ve gained valuable
+              skills in creating engaging and responsive user interfaces.
+            </p>
+          
 
           <div v-if="this.selectedComponent == 'education'" class="education">
             <h4 class="mb-1">Bachelor's degree, computer and data science</h4>
@@ -84,7 +85,7 @@ export default {
 </script>
 
 <style scoped>
-.about {
+.container {
   color: white;
   min-height: 100vh;
 }
@@ -102,7 +103,7 @@ export default {
 span {
   font-family: var(--secondary-font);
   line-height: 1.6;
-  max-width: 85%;
+  max-width: 100%;
   opacity: 0.8;
 }
 .about-img {

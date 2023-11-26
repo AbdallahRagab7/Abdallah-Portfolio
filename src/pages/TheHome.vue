@@ -3,7 +3,7 @@
     <div class="row justify-content-center justify-content-md-around">
       <!-- <div class="col-10 col-lg-5 mb-5 mb-lg-0 about"> -->
       <div
-        class="about col-8 col-sm-6 col-md-6 col-lg-5 mb-5 mb-lg-0 order-last order-sm-first"
+        class="about col-9 col-sm-6 col-md-6 col-lg-5 mb-5 mb-lg-0 order-last order-sm-first"
       >
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
         <h2 class="speciality ">Front-End Web Developer</h2>
@@ -11,7 +11,8 @@
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
         </div>
-        <p class="text-white">
+
+        <p class="text-white ">
           Detail-oriented professional with an associate degree in computer
           science and extensive knowledge in creating detailed design
           specifications and front-end applications.
@@ -20,7 +21,7 @@
 
       <!-- <div class="col-8 col-md-9 col-lg-5 circles justify-self-center align-self-center  "> -->
       <div
-        class="col-8 col-sm-6 col-md-6 col-lg-5 circles justify-self-center align-self-center"
+        class="col-9 col-sm-6 col-md-6 col-lg-5 circles justify-self-center align-self-center"
       >
         <div class="profile-img overflow-hidden">
           <img src="../assets/me1.png" alt="" />
@@ -61,7 +62,7 @@
 .about p {
   font-family: var(--secondary-font);
   line-height: 1.6;
-  max-width: 86%;
+  /* max-width: 86%; */
   opacity: 0.8;
 }
 
