@@ -3,91 +3,66 @@
     <h1 class="text-center p-2">My Projects</h1>
 
     <div class="row">
-      <div
-        class="col-12 mb-5 myproject d-flex align-items-center justify-content-between justify-content-lg-around"
-      >
-        <div class="img overflow-hidden col-5 col-sm-5 col-md-4 col-lg-3">
-          <img src="../assets/tailor-campus.png" alt="" />
-        </div>
-
-        <div class="details col-6 col-sm-6 col-md-7 col-lg-7">
-          <h2 class="project-title">Tailor Campus</h2>
-          <p class="summary">
-            Tailor Campus is an e-learning platform designed to deliver
-            personalized learning experiences, affording users the opportunity
-            to explore a diverse array of courses and acquire skills tailored to
-            their specific needs.
-          </p>
-          <div class="text-end">
-            <a
-              href="github.com/AbdallahRagab7/tailor-campus"
-              class="project-link"
-              >github/tailor-campus</a
-            >
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div
-        class="col-12 mb-5 myproject d-flex align-items-center justify-content-between justify-content-lg-around"
-      >
-        <div class="img overflow-hidden col-5 col-sm-5 col-md-4 col-lg-3">
-          <img src="../assets/tailor-campus.png" alt="" />
-        </div>
-
-        <div class="details col-6 col-sm-6 col-md-7 col-lg-7">
-          <h2 class="project-title">Tailor Campus</h2>
-          <p class="summary">
-            Tailor Campus is an e-learning platform designed to deliver
-            personalized learning experiences, affording users the opportunity
-            to explore a diverse array of courses and acquire skills tailored to
-            their specific needs.
-          </p>
-          <div class="text-end">
-            <a
-              href="github.com/AbdallahRagab7/tailor-campus"
-              class="project-link"
-              >github/tailor-campus</a
-            >
-          </div>
-        </div>
-      </div>
-
-
-
-      
-      <div
-        class="col-12 mb-5 myproject d-flex align-items-center justify-content-between justify-content-lg-around"
-      >
-        <div class="img overflow-hidden col-5 col-sm-5 col-md-4 col-lg-3">
-          <img src="../assets/tailor-campus.png" alt="" />
-        </div>
-
-        <div class="details col-6 col-sm-6 col-md-7 col-lg-7">
-          <h2 class="project-title">Tailor Campus</h2>
-          <p class="summary">
-            Tailor Campus is an e-learning platform designed to deliver
-            personalized learning experiences, affording users the opportunity
-            to explore a diverse array of courses and acquire skills tailored to
-            their specific needs.
-          </p>
-          <div class="text-end">
-            <a
-              href="github.com/AbdallahRagab7/tailor-campus"
-              class="project-link"
-              >github/tailor-campus</a
-            >
-          </div>
-        </div>
-      </div>
-
+      <the-project
+        v-for="project in myProjects"
+        :key="project"
+        :projectImg="project.projectImg"
+        :project-title="project.projectTitle"
+        :project-summary="project.projectsummary"
+        :project-link="project.projectLink"
+        :fake-link="project.fakeLink"
+      ></the-project>
     </div>
   </div>
 </template>
+
+<script>
+import TheProject from "../components/TheProject.vue";
+export default {
+  components: {
+    TheProject,
+  },
+
+  data() {
+    return {
+      myProjects: [
+        {
+          projectImg: "tailor-campus.png",
+          projectTitle: "Tailor Campus",
+          projectsummary:
+            "Tailor Campus is an e-learning platform designed to deliver personalized  learning experiences, affording users the opportunity to explore a diverse array of courses and acquire skills tailored to their specific needs.",
+          projectLink: "https://github.com/AbdallahRagab7/tailor-campus",
+          fakeLink: "github/tailor-campus",
+        },
+
+        {
+          projectImg: "coach-finder.png",
+          projectTitle: "Coach Finder",
+          projectsummary: `Coach Finder app is facilitating the listing and filtration of available coaches who have registered with our platform . Key functionalities include the ability to view coach details, register as a coach, and establish direct communication with coaches.`,
+          projectLink: "https://github.com/AbdallahRagab7/coach-app",
+          fakeLink: "github/coach-finder",
+        },
+
+        {
+          projectImg: "monster-slayer.png",
+          projectTitle: "Monster Slayer Game",
+          projectsummary: `The game features dual health bars—one for the player and another for the monster—where both entities execute various attacks, leading to a gradual decline in health bars. The ultimate victor is determined by the depleting the opponent’s health bar.`,
+
+          projectLink: "https://github.com/AbdallahRagab7/Monster-Slayer-Game",
+          fakeLink: "github/Monster-Slayer",
+        },
+        {
+          projectImg: "tictac.png",
+          projectTitle: "Tic Tac Toe",
+          projectsummary: `The Tic Tac Toe game is a game for two players,called "X" and "O", who take turns marking thespaces in a 3×3 grid. The player who succeeded in placing three respective marks in a horizontal,vertical, or diagonal row wins the game.`,
+          projectLink: "https://github.com/AbdallahRagab7/TicTacToe",
+          fakeLink: "github/TicTacToe",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style scoped>
 .container {
@@ -99,53 +74,5 @@ h1 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   font-size: 3rem;
-}
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-.img {
-  border-radius: 3.125rem;
-  border: 2px solid #1597bb;
-  background: #d9d9d9;
-}
-.img img {
-  width: 100%;
-  height: 100%;
-}
-
-.summary {
-  opacity: 0.8;
-  font-size: 1.1rem;
-  font-family: var(--secondary-font);
-}
-.project-link {
-  text-align: end;
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .summary {
-    font-size: 1rem;
-  }
-  .project-link {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .summary {
-    font-size: .9rem;
-  }
-  .project-link {
-    font-size: 0.9rem;
-  }
-  .img {
-    margin-top: -3rem;
-    border-radius: 2.125rem;
-
-  }
 }
 </style>
