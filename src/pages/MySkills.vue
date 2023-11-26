@@ -15,6 +15,7 @@
         <li><img src="../assets/java.png" alt="" /></li>
         <li><img src="../assets/restapi.png" alt="" /></li>
         <li><img src="../assets/git.png" alt="" /></li>
+        <li><img src="../assets/vuex.png" alt="" /></li>
       </ul>
     </div>
   </div>
@@ -35,7 +36,7 @@ h2 {
 
 .skills {
   border-radius: 1.875rem;
-  opacity: 0.35;
+  opacity: .8;
   background: rgba(21, 151, 187, 0.29);
   width: 80%;
   height: 75%;
@@ -64,6 +65,8 @@ h2 {
 .imgs li img {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width : 992px) {
