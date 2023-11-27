@@ -5,6 +5,7 @@
     <TheAbout />
     <MySkills />
     <MyProjects />
+    <ContactMe />
   </main>
   <!-- <router-view/> -->
 </template>
@@ -14,6 +15,7 @@ import TheHome from "./pages/TheHome.vue";
 import TheAbout from "./pages/TheAbout.vue";
 import MySkills from "./pages/MySkills.vue";
 import MyProjects from "./pages/MyProjects.vue";
+import ContactMe from "./pages/ContactMe.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     TheAbout,
     MySkills,
     MyProjects,
+    ContactMe
 
   },
 };
