@@ -2,23 +2,23 @@
   <section>
     <div class="container">
       <div
-        class="row justify-content-center justify-content-sm-between justify-content-md-between justify-content-lg-around "
+        class="row justify-content-center justify-content-sm-between justify-content-md-between justify-content-lg-around"
       >
-        <div class="col-10 col-sm-6 col-lg-4 circles align-self-center align-self-md-start ">
+        <div
+          class="col-9 col-sm-6 col-lg-4 circles align-self-center align-self-md-start"
+        >
           <div class="about-img overflow-hidden">
-            <img src="../assets/about.png" alt="" />
+            <img src="../assets/vector3.jpeg" alt="" />
           </div>
         </div>
 
-        <div class="col-10  col-sm-6 col-lg-6 about">
+        <div class="col-10 col-sm-6 col-lg-6 about">
           <h1>About me</h1>
           <h2 class="mb-4">
             Every great website begin within even better story .
           </h2>
 
-          <ul
-            class="d-flex align-items-center p-0  mynavbar mb-4"
-          >
+          <ul class="d-flex align-items-center p-0 mynavbar mb-4">
             <li @click="setComponent('about')" :class="about">About</li>
             <li @click="setComponent('education')" :class="education">
               Education
@@ -28,13 +28,12 @@
             </li>
           </ul>
 
-            <p v-if="this.selectedComponent == 'about'" class="me ">
-              I am a fresh graduate from the Faculty of Computer and Data Science
-              with a passion for web development. My primary expertise lies in
-              front-end web development using Vue.js, where I’ve gained valuable
-              skills in creating engaging and responsive user interfaces.
-            </p>
-          
+          <p v-if="this.selectedComponent == 'about'" class="me">
+            I am a fresh graduate from the Faculty of Computer and Data Science
+            with a passion for web development. My primary expertise lies in
+            front-end web development using Vue.js, where I’ve gained valuable
+            skills in creating engaging and responsive user interfaces.
+          </p>
 
           <div v-if="this.selectedComponent == 'education'" class="education">
             <h4 class="mb-1">Bachelor's degree, computer and data science</h4>
@@ -48,7 +47,36 @@
             v-if="this.selectedComponent == 'certificate'"
             class="certificate"
           >
-            this is my Certificates
+            <ul>
+              <li>
+                <a
+                  href="https://www.udemy.com/certificate/UC-3cf39e31-ac83-4c71-bf1a-fbaf0c780730/"
+                  >Vue - The Complete Guide
+                </a>
+                <span class="text-center-end">Udemy</span>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/DU2JY4KT75CU"
+                  >Foundations: Data, Data, Everywhere</a
+                >
+                <span class="">Coursera</span>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/8PXCXPCPCRAB"
+                  >Ask Questions to Make Data-Driven Decisions</a
+                >
+                <span class="">Coursera</span>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/2BQUSWB23CHP"
+                  >Prepare Data for Exploration</a
+                >
+                <span class="">Coursera</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -172,6 +200,21 @@ span {
   margin-top: 0.5rem;
 }
 
+.certificate ul li {
+  margin-bottom: .8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.certificate ul a {
+ text-decoration: none;
+font-family: var(--heading-font);
+font-size: 1.3rem;
+color: white;
+}
+.certificate ul a:hover {
+  color: #05c9ff;;
+}
+
 @media (max-width: 768px) {
   .about-img,
   .circles::after {
@@ -193,6 +236,9 @@ span {
   }
   .about h2 {
     font-size: 1.5rem;
+  }
+  .certificate ul a {
+    font-size: 1rem;
   }
 }
 </style>

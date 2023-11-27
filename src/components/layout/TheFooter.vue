@@ -1,8 +1,17 @@
 <template>
-  <div class="footer d-flex justify-content-between align-items-center ">
-    <p class="mb-0 ms-3">@ 2023 Mo’men Medhat Ux/Ui - All rights reserved</p>
+  <div class="footer d-flex justify-content-between align-items-center">
+    <p class="mb-0 ms-0 ms-sm-3">
+      @ 2023
+      <a
+        href="https://www.behance.net/moamenmedh7a4f"
+        target="blank"
+        class="moamen"
+        >Mo’men Medhat</a
+      >
+      Ux/Ui - All rights reserved
+    </p>
 
-    <ul class="d-flex align-items-center me-4 mb-0 ps-l ">
+    <ul class="d-flex align-items-center me-4 mb-0 ps-0 ps-l">
       <li class="overflow-hidden">
         <a href="https://github.com/AbdallahRagab7" target="blank">
           <img src="../../assets/github.png" alt="" />
@@ -10,7 +19,10 @@
       </li>
 
       <li class="overflow-hidden">
-        <a href="https://www.linkedin.com/in/abdallah-ragab-977a92278" target="blank">
+        <a
+          href="https://www.linkedin.com/in/abdallah-ragab-977a92278"
+          target="blank"
+        >
           <img src="../../assets/linkedin.png" alt="" />
         </a>
       </li>
@@ -27,11 +39,18 @@
 p {
   color: white;
   font-family: var(--heading-font);
+  line-height: 3;
 }
 
 img {
   width: 100%;
   height: 100%;
+}
+.moamen {
+  text-decoration: none;
+  font-family: var(--heading-font);
+  color: rgb(25, 25, 63);
+  margin: 0 1px;
 }
 
 li {
@@ -44,12 +63,13 @@ li {
 }
 
 li:hover {
-  background: rgba(37, 6, 150, 0.3);
+  background: rgba(175, 173, 180, 0.3);
 }
 
 @media (max-width: 576px) {
-    p  {
-        font-size: .8rem;
-    }
+  p,
+  .moamen {
+    font-size: 0.8rem;
+  }
 }
 </style>

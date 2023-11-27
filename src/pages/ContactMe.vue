@@ -122,6 +122,10 @@ label {
         height: 65%;
 
       }
+      .container {
+        height: 75vh;
+      }
+ 
 }
 
 
