@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center mb-3">Contacts</h1>
+    <h1 class="text-center mb-4">Contacts</h1>
     <div class="contact">
       <h2>Connect with Me with Confidence</h2>
 
@@ -85,6 +85,46 @@ label {
   font-family: var(--heading-font);
   color: var(--primary-color);
   font-size: 1.2rem;
+}
+
+
+
+@media (max-width:768px) {
+    .mycontacts a,
+    .mycontacts p {
+      font-size: 1.4rem;
+    }
+
+
+    img {
+        width: 110px;
+        height: 115px;
+      }
 
 }
+@media (max-width:576px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    .mycontacts a,
+    .mycontacts p {
+      font-size: 1.3rem;
+    }
+
+
+    img {
+        width: 110px;
+        height: 115px;
+      }
+
+      .contact {
+        width: 95%;
+        height: 65%;
+
+      }
+}
+
+
+
+
 </style>

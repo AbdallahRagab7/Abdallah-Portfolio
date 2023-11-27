@@ -58,5 +58,23 @@ ul {
 main {
   background-color: var(--bg-color);
 }
+/*
+@media (max-width: 1400px) {
+  html  {
+    font-size: 16px;
+  }
+}
 
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+*/
 </style>
