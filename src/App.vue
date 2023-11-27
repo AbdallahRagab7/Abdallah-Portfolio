@@ -6,11 +6,13 @@
     <MySkills />
     <MyProjects />
     <ContactMe />
+    <TheFooter />
   </main>
   <!-- <router-view/> -->
 </template>
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
 import TheHome from "./pages/TheHome.vue";
 import TheAbout from "./pages/TheAbout.vue";
 import MySkills from "./pages/MySkills.vue";
@@ -20,12 +22,12 @@ import ContactMe from "./pages/ContactMe.vue";
 export default {
   components: {
     TheHeader,
+    TheFooter,
     TheHome,
     TheAbout,
     MySkills,
     MyProjects,
-    ContactMe
-
+    ContactMe,
   },
 };
 </script>
