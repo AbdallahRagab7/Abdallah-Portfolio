@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center p-2">My Projects</h1>
+    <h1 class="text-center p-2 p-lg-3">My Projects</h1>
 
     <div class="row">
       <the-project

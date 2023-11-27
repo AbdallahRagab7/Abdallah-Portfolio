@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="title text-center mb-1 p-2">
+    <div class="title text-center mb-1 pt-5 p-lg-2">
       <h1>My Skills</h1>
       <h2>Coding like poetry should be short and concise.</h2>
     </div>

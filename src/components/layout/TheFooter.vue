@@ -8,7 +8,7 @@
         class="moamen"
         >Mo’men Medhat</a
       >
-      Ux/Ui - All rights reserved
+      Ui/Ux - All rights reserved
     </p>
 
     <ul class="d-flex align-items-center me-4 mb-0 ps-0 ps-l">

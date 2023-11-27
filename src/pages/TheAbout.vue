@@ -18,7 +18,7 @@
             Every great website begin within even better story .
           </h2>
 
-          <ul class="d-flex align-items-center p-0 mynavbar mb-4">
+          <ul class="d-flex align-items-center p-0 mynavbar mb-5">
             <li @click="setComponent('about')" :class="about">About</li>
             <li @click="setComponent('education')" :class="education">
               Education
@@ -78,6 +78,8 @@
               </li>
             </ul>
           </div>
+
+          
         </div>
       </div>
     </div>
