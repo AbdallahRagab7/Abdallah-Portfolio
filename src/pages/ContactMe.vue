@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="text-center mb-4">Contacts</h1>
     <div class="contact">
-      <h2>Connect with Me with Confidence</h2>
+      <h2 >Connect with Me with Confidence</h2>
 
       <ul class="mycontacts">
         <li class="d-flex align-items-center">
@@ -119,7 +119,7 @@ label {
 
       .contact {
         width: 95%;
-        height: 65%;
+        height: 80%;
 
       }
       .container {
