@@ -20,7 +20,7 @@
 
         <div class="cv d-flex align-items-center mb-3">
           <a
-            href="https://drive.google.com/file/d/1UGLw0_5VaczVUKV3Z9iaIt3pAcYvKaTU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Vas2RB3j-e7niOEPOJdmZioVfJ1orJcp/view?usp=sharing"
             target="blank"
           >
             <div class="btn-circles">
