@@ -1,14 +1,16 @@
 <template>
   <main>
-    <TheHeader />
-    <TheHome />
-    <TheAbout />
-    <MySkills />
-    <MyProjects />
-    <ContactMe />
+    <TheHeader @scrollToSection="scrollToSection" />
+    <TheHome id="home"/>
+    <!-- <div ref="about"> -->
+    <TheAbout id="about"></TheAbout>
+    <!-- </div> -->
+
+    <MySkills id="skills" />
+    <MyProjects id="projects" />
+    <ContactMe id="contact"/>
     <TheFooter />
   </main>
-  <!-- <router-view/> -->
 </template>
 <script>
 import TheHeader from "./components/layout/TheHeader.vue";
@@ -28,6 +30,18 @@ export default {
     MySkills,
     MyProjects,
     ContactMe,
+  },
+  methods: {
+    scrollToSection(elementId) {
+      // const element = this.$refs[section];
+      // element.scrollIntoView({ behavior: "smooth" });
+
+      const targetElement = document.getElementById(elementId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container">
+    <div class="container p-3 p-md-5">
       <div
         class="row justify-content-center justify-content-sm-between justify-content-md-between justify-content-lg-around"
       >

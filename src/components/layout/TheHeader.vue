@@ -49,19 +49,49 @@
               class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-lg-center"
             >
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <router-link
+                  to="home"
+                  @click="scrollTo('home')"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</router-link
+                >
               </li>
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
-                <a class="nav-link" href="#">About</a>
+                <router-link
+                  to="/about"
+                  @click="scrollTo('about')"
+                  class="nav-link"
+                  >About</router-link
+                >
               </li>
+
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
-                <a class="nav-link" href="#">Skills</a>
+                <router-link
+                  to="/skills"
+                  @click="scrollTo('skills')"
+                  class="nav-link"
+                  >Skills</router-link
+                >
               </li>
+
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
-                <a class="nav-link" href="#">Projects</a>
+                <router-link
+                  to="/projects"
+                  @click="scrollTo('projects')"
+                  class="nav-link"
+                  >Projects</router-link
+                >
               </li>
+
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
-                <a class="nav-link" href="#">Contact</a>
+                <router-link
+                  to="/contact"
+                  @click="scrollTo('contact')"
+                  class="nav-link"
+                  >Contact</router-link
+                >
               </li>
             </ul>
           </div>
@@ -70,6 +100,16 @@
     </nav>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollTo(section) {
+      this.$emit("scrollToSection", section);
+    },
+  },
+};
+</script>
 
 <style scoped>
 .navbar-nav .nav-link,
@@ -82,7 +122,6 @@
 .navbar-nav .nav-link.active,
 .navbar-brand:hover {
   color: aqua;
-
 }
 .nav-link:hover {
   color: aqua;
@@ -95,7 +134,7 @@
 
 @media (max-width: 991px) {
   .sidebar {
-    background: rgba(21, 151, 187, 0.50);
+    background: rgba(21, 151, 187, 0.5);
     box-shadow: 10px 0px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
   }
