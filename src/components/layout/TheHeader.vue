@@ -50,11 +50,11 @@
             >
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
                 <router-link
-                  to="home"
+                  to="/home"
                   @click="scrollTo('home')"
-                  class="nav-link active"
+                  class="nav-link"
+                  :class="{ active: activeSection == 'home' }"
                   aria-current="page"
-                  href="#"
                   >Home</router-link
                 >
               </li>
@@ -63,6 +63,7 @@
                   to="/about"
                   @click="scrollTo('about')"
                   class="nav-link"
+                  :class="{ active: activeSection == 'about' }"
                   >About</router-link
                 >
               </li>
@@ -72,6 +73,7 @@
                   to="/skills"
                   @click="scrollTo('skills')"
                   class="nav-link"
+                  :class="{ active: activeSection == 'skills' }"
                   >Skills</router-link
                 >
               </li>
@@ -81,6 +83,7 @@
                   to="/projects"
                   @click="scrollTo('projects')"
                   class="nav-link"
+                  :class="{ active: activeSection == 'projects' }"
                   >Projects</router-link
                 >
               </li>
@@ -90,6 +93,7 @@
                   to="/contact"
                   @click="scrollTo('contact')"
                   class="nav-link"
+                  :class="{ active: activeSection == 'contact' }"
                   >Contact</router-link
                 >
               </li>
@@ -103,10 +107,20 @@
 
 <script>
 export default {
+  data () {
+    return {
+      activeSection : ''
+    }
+  },
   methods: {
     scrollTo(section) {
       this.$emit("scrollToSection", section);
+      this.activeSection = section
+
     },
+  },
+  created() {
+    console.log(this.activeSection);
   },
 };
 </script>

@@ -1,14 +1,14 @@
 <template>
   <main>
-    <TheHeader @scrollToSection="scrollToSection" />
-    <TheHome id="home"/>
+    <TheHeader @scrollToSection="scrollToSection"></TheHeader>
+    <TheHome id="home" />
     <!-- <div ref="about"> -->
     <TheAbout id="about"></TheAbout>
     <!-- </div> -->
 
     <MySkills id="skills" />
     <MyProjects id="projects" />
-    <ContactMe id="contact"/>
+    <ContactMe id="contact" />
     <TheFooter />
   </main>
 </template>
@@ -31,15 +31,18 @@ export default {
     MyProjects,
     ContactMe,
   },
+
   methods: {
     scrollToSection(elementId) {
       // const element = this.$refs[section];
       // element.scrollIntoView({ behavior: "smooth" });
 
       const targetElement = document.getElementById(elementId);
+      this.activeSection = elementId;
 
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth" });
+        // console.log(this.activeSection);
       }
     },
   },

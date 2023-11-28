@@ -46,7 +46,7 @@
       </div>
 
       <div
-        class="circles col-9 col-sm-6 col-md-6 col-lg-5 justify-self-center align-self-center"
+        class="circles col-9 col-sm-6 col-md-6 col-lg-5 justify-self-center align-self-lg-center  "
       >
         <div class="profile-img overflow-hidden">
           <img src="../assets/me1.png" alt="" />

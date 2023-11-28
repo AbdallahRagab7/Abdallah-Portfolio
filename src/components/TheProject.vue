@@ -32,9 +32,9 @@ export default {
     "fakeLink",
   ],
 
-  mounted() {
-    console.log(this.projectImg);
-  },
+  // mounted() {
+  //   console.log(this.projectImg);
+  // },
 };
 </script>
 
