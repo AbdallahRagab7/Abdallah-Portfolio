@@ -8,6 +8,7 @@
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
         <h2 class="speciality">Front-End Web Developer</h2>
         <h2 class="speciality">Software Engineer</h2>
+
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
         </div>
@@ -41,13 +42,15 @@
             </div>
           </a>
           <p class="download">Download C.V</p>
-
         </div>
       </div>
 
       <div
-        class="circles col-9 col-sm-6 col-md-6 col-lg-5 justify-self-center align-self-lg-center  "
+        class="circles col-9 col-sm-6 col-md-6 col-lg-5 justify-self-center align-self-lg-center"
       >
+        <div class="overlay"></div>
+        <div class="img-animation"></div>
+
         <div class="profile-img overflow-hidden">
           <img src="../assets/me1.png" alt="" />
         </div>
@@ -85,6 +88,13 @@
   object-fit: cover;
 }
 
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .profile-img {
   position: relative;
   width: 15.0625rem;
@@ -96,6 +106,7 @@
   background: var(--bg-color);
   z-index: 1;
 }
+
 
 .circles {
   position: relative;
@@ -123,7 +134,6 @@
 .summary {
   font-family: var(--secondary-font);
   line-height: 1.6;
-  /* max-width: 86%; */
   opacity: 0.8;
 }
 
@@ -155,14 +165,85 @@
   transform: translateX(15px);
 }
 
+
+/*Animations*/
+.name,
+.speciality,
+.summary,
+.line {
+  position: relative;
+}
+
+.name::before,
+.speciality::before,
+.summary::before,
+.line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  left: 0;
+  top: 0;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.speciality::before {
+  animation-delay: 1.3s;
+}
+.line::before {
+  animation-delay: 1.5s;
+}
+.summary::before {
+  animation-delay: 1.6s;
+}
+.btn-circles::after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: var(--bg-color);
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.7s;
+}
+
+.img-animation {
+  position: absolute;
+  background: white;
+  width: 104%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
+  z-index: 2;
+  background: var(--bg-color);
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.7s;
+
+
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+/*end of animations */
+
+/*media queries */
 @media (max-width: 768px) {
-  .circles::after {
+  .circles::after , .overlay {
     display: none;
   }
   .name {
     font-size: 2.5rem;
   }
 }
+
 
 @media (max-width: 576px) {
   .profile-img,
@@ -176,29 +257,13 @@
   .name {
     font-size: 1.8rem;
   }
-}
-
-.profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  .img-animation {
+    height: 110%;
+  
+  }
 }
 
 
-/*Animations*/ 
-.name {
-  position: relative;
-  background: black;
-}
-.name::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-  left: 0;
-  top: 0;
-  animation: showRight 1s ease forwards;
-  animation-delay: .4s;
-}
+
+
 </style>

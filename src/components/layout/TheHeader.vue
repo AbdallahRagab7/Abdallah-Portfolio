@@ -2,7 +2,7 @@
   <section>
     <nav class="navbar navbar-expand-lg sticky">
       <div class="container border-bottom">
-        <a class="navbar-brand fs-4" href="#"
+        <a class="navbar-brand logo fs-4" href="#"
           >ABDALLAH
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -154,6 +154,29 @@ export default {
   }
   .offcanvas-title {
     font-size: 1.9rem;
+  }
+}
+
+
+/*Animations*/ 
+.logo {
+  position: relative;
+}
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  left: 0;
+  top: 0;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
   }
 }
 </style>
