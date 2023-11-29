@@ -81,8 +81,8 @@ h2 {
 @media (max-width : 576px) {
     .imgs li {
         margin-bottom: 2rem;
-        width: 85px;
-        height: 75px;
+        width: 75px;
+        height: 65px;
         margin-right: 2rem;
       
       } 

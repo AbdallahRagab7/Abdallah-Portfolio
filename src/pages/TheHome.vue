@@ -183,4 +183,22 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+/*Animations*/ 
+.name {
+  position: relative;
+  background: black;
+}
+.name::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  left: 0;
+  top: 0;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
 </style>
