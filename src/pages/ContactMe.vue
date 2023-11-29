@@ -30,7 +30,7 @@
           <div>
             <label for="email">Location</label>
             <a href="mailto:a.ragab8882@gmail.com" id="email">
-              a.ragab8882@gmail.com</a
+              Alexandria,Egypt</a
             >
           </div>
         </li>
