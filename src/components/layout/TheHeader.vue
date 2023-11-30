@@ -46,7 +46,7 @@
 
           <div class="offcanvas-body">
             <ul
-              class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-lg-center"
+              class="navbar-nav nav-animation justify-content-end flex-grow-1 pe-3 align-items-lg-center"
             >
               <li class="nav-item mx-3 mx-lg-2 mb-1 mb-lg-0">
                 <router-link
@@ -159,9 +159,9 @@ export default {
 
 
 /*Animations*/ 
-.logo {
-  position: relative;
-}
+
+/* will be relative to nearest positioned ancestor (navbar)
+ navbar is position:relative (look at dev tool) */
 .logo::after {
   content: '';
   position: absolute;
