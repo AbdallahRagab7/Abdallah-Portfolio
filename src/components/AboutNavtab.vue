@@ -7,58 +7,63 @@
         Certificate
       </li>
     </ul>
+    <transition name="fade-button" mode="out-in">
+      <p v-if="this.selectedComponent == 'about'" class="me">
+        I am a fresh graduate from the Faculty of Computer and Data Science with
+        a passion for web development. My primary expertise lies in front-end
+        web development using Vue.js, where I’ve gained valuable skills in
+        creating engaging and responsive user interfaces.
+      </p>
+    </transition>
 
-    <p v-if="this.selectedComponent == 'about'" class="me">
-      I am a fresh graduate from the Faculty of Computer and Data Science with a
-      passion for web development. My primary expertise lies in front-end web
-      development using Vue.js, where I’ve gained valuable skills in creating
-      engaging and responsive user interfaces.
-    </p>
+    <transition name="fade-button" mode="out-in">
+      <div v-if="this.selectedComponent == 'education'" class="education">
+        <h4 class="mb-1">Bachelor's degree, computer and data science</h4>
+        <span class="fs-5"
+          >Faculty of Computer and Data Science - Alexandria - Egypt
+          <span class="date">2019-2023 </span>
+        </span>
+      </div>
+    </transition>
 
-    <div v-if="this.selectedComponent == 'education'" class="education">
-      <h4 class="mb-1">Bachelor's degree, computer and data science</h4>
-      <span class="fs-5"
-        >Faculty of Computer and Data Science - Alexandria - Egypt
-        <span class="date">2019-2023 </span>
-      </span>
-    </div>
-
-    <div v-if="this.selectedComponent == 'certificate'" class="certificate">
-      <ul>
-        <li>
-          <a
-            target="blank"
-            href="https://www.udemy.com/certificate/UC-3cf39e31-ac83-4c71-bf1a-fbaf0c780730/"
-            >Vue - The Complete Guide
-          </a>
-          <span class="text-center-end">Udemy</span>
-        </li>
-        <li>
-          <a
-            target="blank"
-            href="https://www.coursera.org/account/accomplishments/verify/DU2JY4KT75CU"
-            >Foundations: Data, Data Everywhere</a
-          >
-          <span class="">Coursera</span>
-        </li>
-        <li>
-          <a
-            target="blank"
-            href="https://www.coursera.org/account/accomplishments/verify/8PXCXPCPCRAB"
-            >Ask Questions to Make Data-Driven Decisions</a
-          >
-          <span class="">Coursera</span>
-        </li>
-        <li>
-          <a
-            target="blank"
-            href="https://www.coursera.org/account/accomplishments/verify/2BQUSWB23CHP"
-            >Prepare Data for Exploration</a
-          >
-          <span class="">Coursera</span>
-        </li>
-      </ul>
-    </div>
+    <transition name="fade-button" mode="out-in">
+      <div v-if="this.selectedComponent == 'certificate'" class="certificate">
+        <ul>
+          <li>
+            <a
+              target="blank"
+              href="https://www.udemy.com/certificate/UC-3cf39e31-ac83-4c71-bf1a-fbaf0c780730/"
+              >Vue - The Complete Guide
+            </a>
+            <span class="text-center-end">Udemy</span>
+          </li>
+          <li>
+            <a
+              target="blank"
+              href="https://www.coursera.org/account/accomplishments/verify/DU2JY4KT75CU"
+              >Foundations: Data, Data Everywhere</a
+            >
+            <span class="">Coursera</span>
+          </li>
+          <li>
+            <a
+              target="blank"
+              href="https://www.coursera.org/account/accomplishments/verify/8PXCXPCPCRAB"
+              >Ask Questions to Make Data-Driven Decisions</a
+            >
+            <span class="">Coursera</span>
+          </li>
+          <li>
+            <a
+              target="blank"
+              href="https://www.coursera.org/account/accomplishments/verify/2BQUSWB23CHP"
+              >Prepare Data for Exploration</a
+            >
+            <span class="">Coursera</span>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </section>
 </template>
 
@@ -145,6 +150,26 @@ export default {
 .certificate ul a:hover {
   color: #05c9ff;
 }
+
+
+.fade-button-enter-from,
+.fade-button-leave-to {
+  opacity: 0;
+}
+
+.fade-button-enter-active {
+  transition: opacity.5s ease-in;
+}
+
+.fade-button-leave-active {
+  transition: opacity .1s ease-in;
+}
+
+.fade-button-enter-to,
+.fade-button-leave-from {
+  opacity: 1;
+}
+
 
 @media (max-width: 768px) {
   .name {
