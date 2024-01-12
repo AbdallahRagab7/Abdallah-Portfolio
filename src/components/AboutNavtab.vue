@@ -11,7 +11,7 @@
       <p v-if="this.selectedComponent == 'about'" class="me">
         I am a fresh graduate from the Faculty of Computer and Data Science with
         a passion for web development. My primary expertise lies in front-end
-        web development using Vue.js, where I’ve gained valuable skills in
+        web development using Vue.js and React, where I’ve gained valuable skills in
         creating engaging and responsive user interfaces.
       </p>
     </transition>

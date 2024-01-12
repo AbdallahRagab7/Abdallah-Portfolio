@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+
     <div class="row justify-content-center justify-content-md-around">
       <!-- order-sm-first to make img display first in mob view -->
       <div
@@ -7,7 +8,7 @@
       >
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
         <h2 class="speciality">Front-End Web Developer</h2>
-        <h2 class="speciality">Software Engineer</h2>
+        <h2 class="speciality">Software Engineer </h2>
 
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
@@ -21,7 +22,7 @@
 
         <div class="cv d-flex align-items-center mb-3">
           <a
-            href="https://drive.google.com/file/d/1Vas2RB3j-e7niOEPOJdmZioVfJ1orJcp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1zCLJrMHrRdWBO_eYyHFyB2QzLrDeYtu5/view?usp=sharing"
             target="blank"
           >
             <div class="btn-circles">
