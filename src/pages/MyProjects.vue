@@ -43,6 +43,14 @@ export default {
           fakeLink: "github/food-order",
         },
         {
+          projectImg: "clothes1.png",
+          projectTitle: "Responsive E-commerce",
+          projectsummary:
+            "Responsive E-commerce app seamlessly integrates with a dummy JSON API, providing variety of clothes and electronics. Its adaptive design ensures an optimal user experience on diverse screen sizes. Users can easily explore the product range, add items to their cart, and adjust quantities on devices of different dimensions,proceed to checkout.",
+          projectLink: "https://github.com/AbdallahRagab7/responsive-ecommerce",
+          fakeLink: "github/e-commerce",
+        },
+        {
           projectImg: "quiz.png",
           projectTitle: "Quiz app",
           projectsummary:

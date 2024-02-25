@@ -22,7 +22,7 @@
 
         <div class="cv d-flex align-items-center mb-3">
           <a
-            href="https://drive.google.com/file/d/1JOHERc-kdj-YVjg8fX5SA58UWBaXZOOi/view?usp=sharing"
+            href="https://drive.google.com/file/d/16X6LgHsGz48NUK-a-PUcZLHdmcKVUb1B/view?usp=sharing"
             target="blank"
           >
             <div class="btn-circles">
