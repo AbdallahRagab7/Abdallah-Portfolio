@@ -11,11 +11,12 @@
         <li><img src="../assets/css.png" alt="" /></li>
         <li><img src="../assets/js.png" alt="" /></li>
         <li><img src="../assets/bootstrap.png" alt="" /></li>
+        <li><img src="../assets/tailwind.png" alt="" /></li>
         <li><img src="../assets/vuejs.png" alt="" /></li>
         <li><img src="../assets/java.png" alt="" /></li>
         <li><img src="../assets/react2.png" alt="" /></li>
-        <li><img src="../assets/git.png" alt="" /></li>
         <li><img src="../assets/vuex.png" alt="" /></li>
+  
       </ul>
     </div>
   </div>
