@@ -9,10 +9,10 @@
     </ul>
     <transition name="fade-button" mode="out-in">
       <p v-if="this.selectedComponent == 'about'" class="me">
-        I am a fresh graduate from the Faculty of Computer and Data Science with
-        a passion for web development. My primary expertise lies in front-end
-        web development using Vue.js and React, where I’ve gained valuable skills in
-        creating engaging and responsive user interfaces.
+        I am a graduate from the Faculty of Computer and Data Science with a
+        passion for web development. My primary expertise lies in front-end web
+        development using Vue.js , Nuxt and React, where I’ve gained valuable
+        skills in creating engaging and responsive user interfaces.
       </p>
     </transition>
 
@@ -151,7 +151,6 @@ export default {
   color: #05c9ff;
 }
 
-
 .fade-button-enter-from,
 .fade-button-leave-to {
   opacity: 0;
@@ -162,14 +161,13 @@ export default {
 }
 
 .fade-button-leave-active {
-  transition: opacity .1s ease-in;
+  transition: opacity 0.1s ease-in;
 }
 
 .fade-button-enter-to,
 .fade-button-leave-from {
   opacity: 1;
 }
-
 
 @media (max-width: 768px) {
   .name {

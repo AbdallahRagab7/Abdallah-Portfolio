@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-
     <div class="row justify-content-center justify-content-md-around">
       <!-- order-sm-first to make img display first in mob view -->
       <div
@@ -8,7 +7,7 @@
       >
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
         <h2 class="speciality">Front-End Web Developer</h2>
-        <h2 class="speciality">Software Engineer </h2>
+        <h2 class="speciality">Software Engineer</h2>
 
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
@@ -22,7 +21,7 @@
 
         <div class="cv d-flex align-items-center mb-3">
           <a
-            href="https://drive.google.com/file/d/1pil5YclcndA9wG_UK5nyR85oIoMem9kb/view?usp=sharing"
+            href="https://drive.google.com/file/d/1goKczWsu8geMUBwF-1WtL6HsS7FINRSa/view?usp=sharing"
             target="blank"
           >
             <div class="btn-circles">
@@ -89,7 +88,6 @@
   object-fit: cover;
 }
 
-
 .profile-img img {
   width: 100%;
   height: 100%;
@@ -107,7 +105,6 @@
   background: var(--bg-color);
   z-index: 1;
 }
-
 
 .circles {
   position: relative;
@@ -166,7 +163,6 @@
   transform: translateX(15px);
 }
 
-
 /*Animations*/
 .name,
 .speciality,
@@ -223,8 +219,6 @@
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 1.7s;
-
-
 }
 
 @keyframes showRight {
@@ -237,14 +231,14 @@
 
 /*media queries */
 @media (max-width: 768px) {
-  .circles::after , .overlay {
+  .circles::after,
+  .overlay {
     display: none;
   }
   .name {
     font-size: 2.5rem;
   }
 }
-
 
 @media (max-width: 576px) {
   .profile-img,
@@ -260,11 +254,6 @@
   }
   .img-animation {
     height: 110%;
-  
   }
 }
-
-
-
-
 </style>

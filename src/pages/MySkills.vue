@@ -15,8 +15,9 @@
         <li><img src="../assets/vuejs.png" alt="" /></li>
         <li><img src="../assets/java.png" alt="" /></li>
         <li><img src="../assets/react2.png" alt="" /></li>
-        <li><img src="../assets/vuex.png" alt="" /></li>
-  
+        <li>
+          <img src="../assets/nuxt3.png" alt="" />
+        </li>
       </ul>
     </div>
   </div>
@@ -37,7 +38,7 @@ h2 {
 
 .skills {
   border-radius: 1.875rem;
-  opacity: .8;
+  opacity: 0.8;
   background: rgba(21, 151, 187, 0.29);
   width: 80%;
   height: 75%;
@@ -60,7 +61,6 @@ h2 {
   overflow: hidden;
   width: 115px;
   height: 100px;
-
 }
 
 .imgs li img {
@@ -68,28 +68,27 @@ h2 {
   height: 100%;
   position: relative;
   z-index: 1;
+  object-fit: contain;
 }
 
-@media (max-width : 992px) {
-    .imgs li {
-        margin-bottom: 2rem;
-        width: 105px;
-        height: 95px;
-        margin-right: 2rem;
-      
-      } 
+@media (max-width: 992px) {
+  .imgs li {
+    margin-bottom: 2rem;
+    width: 105px;
+    height: 95px;
+    margin-right: 2rem;
+  }
 }
-@media (max-width : 576px) {
-    .imgs li {
-        margin-bottom: 2rem;
-        width: 75px;
-        height: 65px;
-        margin-right: 2rem;
-      
-      } 
-      .skills {
-        width: 95%;
-        height: 65%;
-      }
+@media (max-width: 576px) {
+  .imgs li {
+    margin-bottom: 2rem;
+    width: 75px;
+    height: 65px;
+    margin-right: 2rem;
+  }
+  .skills {
+    width: 95%;
+    height: 65%;
+  }
 }
 </style>
