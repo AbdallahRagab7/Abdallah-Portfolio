@@ -20,7 +20,7 @@
           <div>
             <label for="email">Call me</label>
             <a href="mailto:a.ragab8882@gmail.com" id="email">
-              +20 01277643280</a
+              +20 1277643280</a
             >
           </div>
         </li>
