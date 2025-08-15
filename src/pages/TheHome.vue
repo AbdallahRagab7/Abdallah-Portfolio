@@ -21,7 +21,7 @@
 
         <div class="cv d-flex align-items-center mb-3">
           <a
-            href="https://drive.google.com/file/d/1gsgeJ-Qb62xbnVMZTy2f0RzN_XXsuFrV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1aaS2D4fBTuLEcz3rLFOFLJoWPcDVFVuy/view?usp=sharing"
             target="blank"
           >
             <div class="btn-circles">
