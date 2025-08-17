@@ -43,7 +43,7 @@
               href="https://www.coursera.org/account/accomplishments/verify/DU2JY4KT75CU"
               >Foundations: Data, Data Everywhere</a
             >
-            <span class="">Coursera</span>
+            <span class="">Google</span>
           </li>
           <li>
             <a
@@ -51,7 +51,7 @@
               href="https://www.coursera.org/account/accomplishments/verify/8PXCXPCPCRAB"
               >Ask Questions to Make Data-Driven Decisions</a
             >
-            <span class="">Coursera</span>
+            <span class="">Google</span>
           </li>
           <li>
             <a
@@ -59,7 +59,7 @@
               href="https://www.coursera.org/account/accomplishments/verify/2BQUSWB23CHP"
               >Prepare Data for Exploration</a
             >
-            <span class="">Coursera</span>
+            <span class="">Google</span>
           </li>
         </ul>
       </div>
