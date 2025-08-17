@@ -27,22 +27,6 @@ export default {
     return {
       myProjects: [
         {
-          projectImg: "tailor-campus.png",
-          projectTitle: "Tailor Campus",
-          projectsummary:
-            "Tailor Campus is an e-learning platform designed to deliver personalized  learning experiences, affording users the opportunity to explore a diverse array of courses and acquire skills tailored to their specific needs.",
-          projectLink: "https://github.com/AbdallahRagab7/tailor-campus",
-          fakeLink: "github/tailor-campus",
-        },
-        {
-          projectImg: "food-order.png",
-          projectTitle: "Food order app",
-          projectsummary:
-            "Food Order application simplifies your dining experience. It efficiently displays a variety of available food items retrieved from the backend. Users can effortlessly add items to their cart, adjust quantities, proceed to checkout, and seamlessly send their cart details to the backend for order completion.",
-          projectLink: "https://github.com/AbdallahRagab7/food-order-app",
-          fakeLink: "github/food-order",
-        },
-        {
           projectImg: "clothes1.png",
           projectTitle: "Seirah E-commerce",
           projectsummary:
@@ -57,6 +41,24 @@ export default {
             "MCQ Quiz application! Dive into a dynamic quiz interface where questions await your quick thinking. there is timer, automatically skipping unanswered questions. Choose wisely – correct answers light up in green, while wrong ones turn red for instant feedback. Upon completion, a detailed summary unveils your performance – the percentage of correct answers, wrong choices, and skipped questions.",
           projectLink: "https://quiz-app-exam-nine.vercel.app/",
           fakeLink: "quiz-app.com",
+        },
+
+        {
+          projectImg: "tailor-campus.png",
+          projectTitle: "Tailor Campus",
+          projectsummary:
+            "Tailor Campus is an e-learning platform designed to deliver personalized  learning experiences, affording users the opportunity to explore a diverse array of courses and acquire skills tailored to their specific needs.",
+          projectLink: "https://github.com/AbdallahRagab7/tailor-campus",
+          fakeLink: "github/tailor-campus",
+        },
+
+        {
+          projectImg: "food-order.png",
+          projectTitle: "Food order app",
+          projectsummary:
+            "Food Order application simplifies your dining experience. It efficiently displays a variety of available food items retrieved from the backend. Users can effortlessly add items to their cart, adjust quantities, proceed to checkout, and seamlessly send their cart details to the backend for order completion.",
+          projectLink: "https://github.com/AbdallahRagab7/food-order-app",
+          fakeLink: "github/food-order",
         },
 
         {
