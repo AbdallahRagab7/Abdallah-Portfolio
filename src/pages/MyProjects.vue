@@ -30,7 +30,7 @@ export default {
           projectImg: "clothes1.png",
           projectTitle: "Seirah E-commerce",
           projectsummary:
-            "Responsive E-commerce app seamlessly integrates with a dummy JSON API, providing variety of clothes and electronics. Its adaptive design ensures an optimal user experience on diverse screen sizes. Users can easily explore the product range, add items to their cart, and adjust quantities on devices of different dimensions,proceed to checkout.",
+            "Responsive e-commerce application with products page featuring pagination and advanced filters. Users can manage their cart with stock-based quantity control, apply promo codes, place orders, and track status in a profile section with printable invoices. Implemented authentication and navigation guards.",
           projectLink: "https://seriah-e-commerce.vercel.app/",
           fakeLink: "seirah.com",
         },
