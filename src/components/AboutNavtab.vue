@@ -9,10 +9,10 @@
     </ul>
     <transition name="fade-button" mode="out-in">
       <p v-if="this.selectedComponent == 'about'" class="me">
-        I am a graduate from the Faculty of Computer and Data Science with a
-        passion for web development. My primary expertise lies in front-end web
-        development using Vue.js , Nuxt and React, where I’ve gained valuable
-        skills in creating engaging and responsive user interfaces.
+        Frontend Developer skilled in Vue.js and React.js with focus on clean,
+        scalable code. Strong in advanced JavaScript concepts and understanding
+        of how JavaScript works behind the scenes, interested in deeply un-
+        derstanding framework internals.
       </p>
     </transition>
 

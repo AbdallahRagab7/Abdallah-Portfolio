@@ -6,8 +6,8 @@
         class="about col-9 col-sm-6 col-md-6 col-lg-5 mb-5 mb-lg-0 order-last order-sm-first"
       >
         <h1 class="name">Hi! I’m Abdallah Ragab.</h1>
-        <h2 class="speciality">Front-End Web Developer</h2>
         <h2 class="speciality">Software Engineer</h2>
+        <h2 class="speciality">Front-End Developer</h2>
 
         <div class="line overflow-hidden">
           <img class="img-fluid" src="../assets/line.png" alt="" />
