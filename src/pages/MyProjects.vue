@@ -44,19 +44,19 @@ export default {
         },
         {
           projectImg: "clothes1.png",
-          projectTitle: "Responsive E-commerce",
+          projectTitle: "Seirah E-commerce",
           projectsummary:
             "Responsive E-commerce app seamlessly integrates with a dummy JSON API, providing variety of clothes and electronics. Its adaptive design ensures an optimal user experience on diverse screen sizes. Users can easily explore the product range, add items to their cart, and adjust quantities on devices of different dimensions,proceed to checkout.",
-          projectLink: "https://github.com/AbdallahRagab7/responsive-ecommerce",
-          fakeLink: "github/e-commerce",
+          projectLink: "https://seriah-e-commerce.vercel.app/",
+          fakeLink: "seirah.com",
         },
         {
           projectImg: "quiz.png",
           projectTitle: "Quiz app",
           projectsummary:
             "MCQ Quiz application! Dive into a dynamic quiz interface where questions await your quick thinking. there is timer, automatically skipping unanswered questions. Choose wisely – correct answers light up in green, while wrong ones turn red for instant feedback. Upon completion, a detailed summary unveils your performance – the percentage of correct answers, wrong choices, and skipped questions.",
-          projectLink: "https://github.com/AbdallahRagab7/quiz-app-react",
-          fakeLink: "github/quizz-app",
+          projectLink: "https://quiz-app-exam-nine.vercel.app/",
+          fakeLink: "quiz-app.com",
         },
 
         {
@@ -75,13 +75,13 @@ export default {
           projectLink: "https://github.com/AbdallahRagab7/Monster-Slayer-Game",
           fakeLink: "github/Monster-Slayer",
         },
-        {
-          projectImg: "tictac.png",
-          projectTitle: "Tic Tac Toe",
-          projectsummary: `The Tic Tac Toe game is a game for two players,called "X" and "O", who take turns marking thespaces in a 3×3 grid. The player who succeeded in placing three respective marks in a horizontal,vertical, or diagonal row wins the game.`,
-          projectLink: "https://github.com/AbdallahRagab7/TicTacToe",
-          fakeLink: "github/TicTacToe",
-        },
+        // {
+        //   projectImg: "tictac.png",
+        //   projectTitle: "Tic Tac Toe",
+        //   projectsummary: `The Tic Tac Toe game is a game for two players,called "X" and "O", who take turns marking thespaces in a 3×3 grid. The player who succeeded in placing three respective marks in a horizontal,vertical, or diagonal row wins the game.`,
+        //   projectLink: "https://github.com/AbdallahRagab7/TicTacToe",
+        //   fakeLink: "github/TicTacToe",
+        // },
       ],
     };
   },
