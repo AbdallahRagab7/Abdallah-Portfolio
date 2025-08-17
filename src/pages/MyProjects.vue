@@ -69,14 +69,14 @@ export default {
           fakeLink: "github/coach-finder",
         },
 
-        {
-          projectImg: "monster-slayer.png",
-          projectTitle: "Monster Slayer Game",
-          projectsummary: `The game features dual health bars—one for the player and another for the monster—where both entities execute various attacks, leading to a gradual decline in health bars. The ultimate victor is determined by the depleting the opponent’s health bar.`,
+        // {
+        //   projectImg: "monster-slayer.png",
+        //   projectTitle: "Monster Slayer Game",
+        //   projectsummary: `The game features dual health bars—one for the player and another for the monster—where both entities execute various attacks, leading to a gradual decline in health bars. The ultimate victor is determined by the depleting the opponent’s health bar.`,
 
-          projectLink: "https://github.com/AbdallahRagab7/Monster-Slayer-Game",
-          fakeLink: "github/Monster-Slayer",
-        },
+        //   projectLink: "https://github.com/AbdallahRagab7/Monster-Slayer-Game",
+        //   fakeLink: "github/Monster-Slayer",
+        // },
         // {
         //   projectImg: "tictac.png",
         //   projectTitle: "Tic Tac Toe",
