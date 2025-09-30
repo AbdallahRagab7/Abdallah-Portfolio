@@ -11,6 +11,7 @@
         :project-summary="project.projectsummary"
         :project-link="project.projectLink"
         :fake-link="project.fakeLink"
+        :img-fit="project.objectFit"
       ></the-project>
     </div>
   </div>
@@ -26,6 +27,31 @@ export default {
   data() {
     return {
       myProjects: [
+        {
+          projectImg: "hwaidakLogo.png",
+          projectTitle: "Hwaidak Hotels",
+          projectsummary:
+            "Developed hotels reservation platform, implemented authentication flows supporting multiple sign-in methods including phone number, Gmail, and email. Developed advanced room filtering, search functionality, and pagination to enhance the booking experience.",
+          projectLink: "https://www.hwaidak-hotels.com/",
+          fakeLink: "hwaidak.com",
+          objectFit: "contain",
+        },
+        {
+          projectImg: "tawzeef.jpg",
+          projectTitle: "Tawzeef",
+          projectsummary:
+            " Contributed to the HR outsourcing and recruitment platform, developing features for both website and dashboard. Delivered responsive pages, integrated job search and application functionality, and enhanced the dashboard by making the website fully dynamic, adding a blog section, and implementing job listing management.",
+          projectLink: "https://www.tawzef.com/en",
+          fakeLink: "tawzeef.com",
+        },
+        {
+          projectImg: "secureLogo.png",
+          projectTitle: "Secure Vet",
+          projectsummary:
+            "Worked on the pet marketplace platform. Implemented responsive pages such as homepage and pet profiles with interactive sliders, integrated with Algolia for instant search, built pet listing creation flows, and customer Chat for deal-making.",
+          projectLink: "https://www.secure-vet.com/en",
+          fakeLink: "securevet.com",
+        },
         {
           projectImg: "clothes1.png",
           projectTitle: "Seirah E-commerce",
