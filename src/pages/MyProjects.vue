@@ -57,7 +57,7 @@ export default {
           projectTitle: "Seirah E-commerce",
           projectsummary:
             "Responsive e-commerce application with products page featuring pagination and advanced filters. Users can manage their cart with stock-based quantity control, apply promo codes, place orders, and track status in a profile section with printable invoices. Implemented authentication and navigation guards.",
-          projectLink: "https://seriah-e-commerce.vercel.app/",
+          projectLink: "https://drive.google.com/file/d/1VFu--IWeU1zK6qwccHJO7ttIVTRkdlWt/view?usp=sharing",
           fakeLink: "seirah.com",
         },
         {
