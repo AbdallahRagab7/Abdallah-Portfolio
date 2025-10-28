@@ -73,6 +73,8 @@ h2 {
   opacity: 0.8;
   font-size: 1.1rem;
   font-family: var(--secondary-font);
+  text-align: justify;
+
 }
 .project-link {
   text-align: end;
