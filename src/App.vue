@@ -42,7 +42,7 @@ export default {
 
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth" });
-        // console.log(this.activeSection);
+        // console.log(activeSection);
       }
     },
   },
