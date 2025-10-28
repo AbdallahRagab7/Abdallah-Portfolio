@@ -74,6 +74,8 @@ h2 {
   font-size: 1.1rem;
   font-family: var(--secondary-font);
   text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 
 }
 .project-link {
