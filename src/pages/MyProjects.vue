@@ -36,7 +36,7 @@ const myProjects = [
     objectFit: "contain",
   },
   {
-    projectImg: "tawzeef.jpg",
+    projectImg: "tawzeef.webp",
     projectTitle: "Tawzeef",
     projectsummary:
       "Contributed to the HR outsourcing and recruitment platform, developing features for both website and dashboard. Delivered responsive pages, integrated job search and application functionality, and enhanced the dashboard by making the website fully dynamic, adding a blog section, and implementing job listing management.",
@@ -44,7 +44,7 @@ const myProjects = [
     fakeLink: "tawzeef.com",
   },
   {
-    projectImg: "secureLogo.png",
+    projectImg: "secureLogo.webp",
     projectTitle: "Secure Vet",
     projectsummary:
       "Worked on the pet marketplace platform. Implemented responsive pages such as homepage and pet profiles with interactive sliders, integrated with Algolia for instant search, built pet listing creation flows, and customer chat for deal-making.",
