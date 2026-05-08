@@ -50,9 +50,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Jockey+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 :root {
   --heading-font: "Jockey One", sans-serif;
   --secondary-font: "Gowun Batang", sans-serif;

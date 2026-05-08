@@ -127,7 +127,7 @@ export default {
   font-size: 1.1rem;
 }
 .education h4 {
-  font-family: "Roboto";
+  font-family: var(--heading-font);
   margin-bottom: 0;
   color: white;
   font-weight: bold;
