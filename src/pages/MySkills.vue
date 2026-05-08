@@ -14,9 +14,9 @@
         <li><img src="../assets/tailwind.png" alt="" /></li>
         <li><img src="../assets/vuejs.png" alt="" /></li>
         <li><img src="../assets/java.png" alt="" /></li>
-        <li><img src="../assets/react2.png" alt="" /></li>
+        <li><img src="../assets/react2.webp" alt="" /></li>
         <li>
-          <img src="../assets/nuxt3.png" alt="" />
+          <img src="../assets/nuxt3.webp" alt="" />
         </li>
       </ul>
     </div>

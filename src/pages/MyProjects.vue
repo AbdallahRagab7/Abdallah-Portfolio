@@ -27,7 +27,7 @@ const rowRef = ref(null);
 
 const myProjects = [
   {
-    projectImg: "hwaidakLogo.png",
+    projectImg: "hwaidakLogo.webp",
     projectTitle: "Hwaidak Hotels",
     projectsummary:
       "Developed hotels reservation platform, implemented authentication flows supporting multiple sign-in methods including phone number, Gmail, and email. Developed advanced room filtering, search functionality, and pagination to enhance the booking experience.",
