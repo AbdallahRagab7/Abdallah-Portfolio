@@ -53,7 +53,14 @@
         <div class="img-animation"></div>
 
         <div class="profile-img overflow-hidden">
-          <img src="../assets/me1.png" alt="" />
+          <img
+            src="../assets/me1.webp"
+            alt="Portrait of Abdallah Ragab"
+            width="482"
+            height="770"
+            fetchpriority="high"
+            loading="eager"
+          />
         </div>
       </div>
     </div>
@@ -89,6 +96,11 @@
   object-fit: cover;
 }
 
+.profile-img picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .profile-img img {
   width: 100%;
   height: 100%;

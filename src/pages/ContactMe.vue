@@ -2,7 +2,7 @@
   <div ref="contactSectionRef" class="container">
     <h1 class="text-center mb-4 contact-card">Contacts</h1>
     <div class="contact contact-card">
-      <h2 >Connect with Me with Confidence</h2>
+      <h2>Connect with Me with Confidence</h2>
 
       <ul class="mycontacts">
         <li class="d-flex align-items-center">
@@ -110,48 +110,37 @@ label {
   font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+  .mycontacts a,
+  .mycontacts p {
+    font-size: 1.4rem;
+  }
 
-
-@media (max-width:768px) {
-    .mycontacts a,
-    .mycontacts p {
-      font-size: 1.4rem;
-    }
-
-
-    img {
-        width: 110px;
-        height: 115px;
-      }
-
+  img {
+    width: 110px;
+    height: 115px;
+  }
 }
-@media (max-width:576px) {
-    h2 {
-        font-size: 1.4rem;
-    }
-    .mycontacts a,
-    .mycontacts p {
-      font-size: 1.3rem;
-    }
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+  .mycontacts a,
+  .mycontacts p {
+    font-size: 1.3rem;
+  }
 
+  img {
+    width: 110px;
+    height: 115px;
+  }
 
-    img {
-        width: 110px;
-        height: 115px;
-      }
-
-      .contact {
-        width: 95%;
-        height: 80%;
-
-      }
-      .container {
-        height: 75vh;
-      }
- 
+  .contact {
+    width: 95%;
+    height: 80%;
+  }
+  .container {
+    height: 75vh;
+  }
 }
-
-
-
-
 </style>
