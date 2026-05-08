@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <h1 class="text-center mb-4">Contacts</h1>
-    <div class="contact">
+  <div ref="contactSectionRef" class="container">
+    <h1 class="text-center mb-4 contact-card">Contacts</h1>
+    <div class="contact contact-card">
       <h2 >Connect with Me with Confidence</h2>
 
       <ul class="mycontacts">
@@ -39,9 +39,27 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from "vue";
+import { useIntersectionReveal } from "../composables/useIntersectionReveal";
+
+const contactSectionRef = ref(null);
+
+useIntersectionReveal(contactSectionRef, ".contact-card");
+</script>
+
 <style scoped>
 .container {
   height: 100vh;
+}
+.contact-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.contact-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1,
@@ -64,6 +82,11 @@ h2 {
   align-items: center;
   flex-direction: column;
   opacity: 0.8;
+}
+
+.mycontacts {
+  padding: 0;
+  list-style: none;
 }
 
 .mycontacts a,

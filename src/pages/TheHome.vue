@@ -14,35 +14,36 @@
         </div>
 
         <p class="summary mb-4 mb-md-5">
-          Detail-oriented professional with an associate degree in computer
-          science and extensive knowledge in creating detailed design
-          specifications and front-end applications.
+          Frontend Developer skilled in Vue.js and React.js experienced in
+          building scalable web applications. Strong in advanced JavaScript
+          concepts with a deep understanding of how JavaScript frameworks work
+          behind the scenes. Skilled in performance optimization and responsive
+          design.
         </p>
 
-        <div class="cv d-flex align-items-center mb-3">
-          <a
-            href="https://drive.google.com/file/d/1aaS2D4fBTuLEcz3rLFOFLJoWPcDVFVuy/view?usp=sharing"
-            target="blank"
-          >
-            <div class="btn-circles">
-              <p class="download-btn me-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="24"
-                  viewBox="0 0 26 24"
-                  fill="none"
-                >
-                  <path
-                    d="M25.0607 13.0607C25.6464 12.4749 25.6464 11.5251 25.0607 10.9393L15.5147 1.3934C14.9289 0.807611 13.9792 0.807611 13.3934 1.3934C12.8076 1.97919 12.8076 2.92893 13.3934 3.51472L21.8787 12L13.3934 20.4853C12.8076 21.0711 12.8076 22.0208 13.3934 22.6066C13.9792 23.1924 14.9289 23.1924 15.5147 22.6066L25.0607 13.0607ZM0 13.5L24 13.5V10.5L0 10.5L0 13.5Z"
-                    fill="white"
-                  />
-                </svg>
-              </p>
-            </div>
-          </a>
+        <a
+          class="cv d-flex align-items-center mb-3"
+          href="https://drive.google.com/file/d/1aaS2D4fBTuLEcz3rLFOFLJoWPcDVFVuy/view?usp=sharing"
+          target="blank"
+        >
+          <div class="btn-circles">
+            <p class="download-btn me-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="24"
+                viewBox="0 0 26 24"
+                fill="none"
+              >
+                <path
+                  d="M25.0607 13.0607C25.6464 12.4749 25.6464 11.5251 25.0607 10.9393L15.5147 1.3934C14.9289 0.807611 13.9792 0.807611 13.3934 1.3934C12.8076 1.97919 12.8076 2.92893 13.3934 3.51472L21.8787 12L13.3934 20.4853C12.8076 21.0711 12.8076 22.0208 13.3934 22.6066C13.9792 23.1924 14.9289 23.1924 15.5147 22.6066L25.0607 13.0607ZM0 13.5L24 13.5V10.5L0 10.5L0 13.5Z"
+                  fill="white"
+                />
+              </svg>
+            </p>
+          </div>
           <p class="download">Download C.V</p>
-        </div>
+        </a>
       </div>
 
       <div
@@ -133,9 +134,20 @@
   font-family: var(--secondary-font);
   line-height: 1.6;
   opacity: 0.8;
+  font-size: 1.1rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* download btn styling */
+.cv {
+  text-decoration: none;
+}
+
 .download {
   font-family: var(--heading-font);
   font-size: 1.2rem;

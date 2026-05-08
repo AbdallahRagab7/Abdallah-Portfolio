@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div class="title text-center mb-1 pt-5 p-lg-2">
+  <div ref="skillsSectionRef" class="container">
+    <div class="title text-center mb-1 pt-5 p-lg-2 skills-card">
       <h1>My Skills</h1>
       <h2>Coding like poetry should be short and concise.</h2>
     </div>
 
-    <div class="skills">
+    <div class="skills skills-card">
       <ul class="imgs">
         <li><img src="../assets/html.png" alt="" /></li>
         <li><img src="../assets/css.png" alt="" /></li>
@@ -23,9 +23,27 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from "vue";
+import { useIntersectionReveal } from "../composables/useIntersectionReveal";
+
+const skillsSectionRef = ref(null);
+
+useIntersectionReveal(skillsSectionRef, ".skills-card");
+</script>
+
 <style scoped>
 .container {
   height: 100vh;
+}
+.skills-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.skills-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .title h1,
 h2 {

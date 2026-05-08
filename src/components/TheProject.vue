@@ -70,13 +70,16 @@ h2 {
 }
 
 .summary {
+  margin-bottom: 0;
   opacity: 0.8;
   font-size: 1.1rem;
   font-family: var(--secondary-font);
   text-align: justify;
-  text-justify: inter-word;
   hyphens: auto;
-
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .project-link {
   text-align: end;

@@ -2,17 +2,18 @@
   <section>
     <div class="container p-3 p-md-5">
       <div
+        ref="aboutRowRef"
         class="row justify-content-center justify-content-sm-between justify-content-md-between justify-content-lg-around"
       >
         <div
-          class="col-9 col-sm-6 col-lg-4 circles align-self-center align-self-md-start"
+          class="col-9 col-sm-6 col-lg-4 circles align-self-center align-self-md-start about-card"
         >
           <div class="about-img overflow-hidden">
             <img src="../assets/vector3.jpeg" alt="" />
           </div>
         </div>
 
-        <div class="col-10 col-sm-6 col-lg-6 about">
+        <div class="col-10 col-sm-6 col-lg-6 about about-card">
           <h1>About me</h1>
           <h2 class="mb-4">
             Every great website begin within even better story .
@@ -25,19 +26,29 @@
   </section>
 </template>
 
-<script>
+<script setup>
+import { ref } from "vue";
 import AboutNavtab from "../components/AboutNavtab.vue";
-export default {
-  components: {
-    AboutNavtab,
-  },
-};
+import { useIntersectionReveal } from "../composables/useIntersectionReveal";
+
+const aboutRowRef = ref(null);
+
+useIntersectionReveal(aboutRowRef, ".about-card");
 </script>
 
 <style scoped>
 .container {
   color: white;
   min-height: 100vh;
+}
+.about-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.about-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about h1 {
