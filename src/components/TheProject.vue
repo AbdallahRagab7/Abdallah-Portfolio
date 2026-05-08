@@ -3,43 +3,41 @@
     class="col-12 mb-5 myproject d-flex align-items-center justify-content-between justify-content-lg-around"
   >
     <div class="img overflow-hidden col-5 col-sm-5 col-md-4 col-lg-3">
-      <!-- <img src="../assets/tailor-campus.png" alt=""> -->
-      <a :href="projectLink" target="blank">
+      <a :href="projectLink" target="_blank">
         <img
           :src="require(`../assets/${projectImg}`)"
           :style="{ objectFit: imgFit || 'cover' }"
+          width="275"
+          height="275"
+          loading="lazy"
+          decoding="async"
+          alt=""
         />
       </a>
     </div>
 
     <div class="details col-6 col-sm-6 col-md-7 col-lg-7">
       <h2 class="project-title">{{ projectTitle }}</h2>
-      <p class="summary">
-        {{ projectSummary }}
-      </p>
+      <p class="summary">{{ projectSummary }}</p>
       <div class="text-end">
-        <a target="blank" :href="projectLink" class="project-link">{{
+        <a target="_blank" :href="projectLink" class="project-link">{{
           fakeLink
         }}</a>
       </div>
     </div>
   </div>
 </template>
-<script>
-export default {
-  props: [
-    "projectImg",
-    "projectTitle",
-    "projectSummary",
-    "projectLink",
-    "fakeLink",
-    "imgFit",
-  ],
 
-  // mounted() {
-  //   console.log(this.projectImg);
-  // },
-};
+<script setup>
+import { defineProps } from "vue";
+defineProps([
+  "projectImg",
+  "projectTitle",
+  "projectSummary",
+  "projectLink",
+  "fakeLink",
+  "imgFit",
+]);
 </script>
 
 <style scoped>
@@ -51,10 +49,7 @@ h2 {
   border-radius: 3.125rem;
   border: 2px solid #1597bb;
   background: #d9d9d9;
-  /* Ensure all thumbnails are perfect squares */
   aspect-ratio: 1 / 1;
-  /* Keep overflow hidden to preserve rounded corners when cropping */
-  /* Reduce visual size to 75% */
   transform: scale(0.8);
   transform-origin: center;
 }
@@ -105,7 +100,6 @@ h2 {
     font-size: 0.9rem;
   }
   .img {
-    margin-top: -3rem;
     border-radius: 2.125rem;
     margin-top: -3rem;
   }
